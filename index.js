@@ -52,14 +52,12 @@ function getSecondaryDetails({ role, level, languages }) {
 }
 
 function handleFilterSelect(event) {
-  console.log(event.target.name);
   filters.push(event.target.name);
   
   renderElements();
 }
 
 function removeFilter(event) {
-  console.log(event);
   filters = filters.filter(item => item !== event.target.value);
 
   renderElements();
@@ -108,7 +106,6 @@ function getJobPostings() {
 
 function addSelectListeners() {
   const buttons = document.querySelectorAll('.detail-button');
-  console.log(buttons);
   buttons.forEach(btn => {
     btn.onclick = handleFilterSelect;
   });
