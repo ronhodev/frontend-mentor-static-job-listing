@@ -216,6 +216,7 @@ body {
   display: flex;
   gap: 12px;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 .filter-button {
